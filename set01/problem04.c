@@ -1,18 +1,20 @@
 #include <stdio.h>
-void change(int *x, int*y);
+void change(int *x, int*y,int *sum);
 
 int main(void) {
-  int x,y;
-  x=8,y=7;
-  change(&x,&y);
-  printf("x is %d y is %d", x,y);
+  int x,y,sum;
+  printf("Enter a first number");
+  scanf("%d",&x);
+  printf("Enter a second number");
+  scanf("%d",&y);
   return 0;
 }
 
 
 
-void change(int *x, int *y)
+void change(int *x, int *y,int *sum);
 {
-   *x=3;
-   *y=1;
+   sum=x+y
+   return *sum;  
+   
 }
