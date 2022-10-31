@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void input_two_strings(char *strvoid input_two_sing1, char *string2);
+void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
 void output(char *string1, char *string2, int result);
 
@@ -14,28 +14,28 @@ int main(){
 
 void input_two_strings(char *string1, char *string2){
   printf("Enter the first string ");
-  scanf(""%s",string1);
+  scanf("%s", string1);
   printf("Enter the second string ");
-  scanf("%s",string2);
+  scanf("%s", string2);
 }
 
 int stringcompare(char *string1, char *string2){
-  int a = strlent(string1);
-  int b = strlent(string2);
-  if(a ==b){
-    int x;
+  int a = strlen(string1);
+  int b = strlen(string2);
+  if(a == b){
+    int i;
     for(i = 0;i<a;i++){
-       if(string1[i]==string2[i]){
-      return(10);
-      continue;
-    }
-    else if(string1[i]>string2[i]){
-      return(1);
-      break;
+      if(string1[i]==string2[i]){
+        return(10);
+        continue;
       }
-    else{
-       return(0);
-       break;
+      else if(string1[i]>string2[i]){
+        return(1);
+        break;
+      }
+      else{
+        return(0);
+        break;
       }
     }  
   }  
@@ -45,9 +45,9 @@ void output(char *string1,char *string2,int result){
   if(result ==10)
   {printf("Both words are equal");}
   else{
-    if(result ==1){printf(""%s is greater than %s")}
+    if(result ==1){printf("%s is greater than %s",
       string1,string2);}
-    else{printf(""%5 is greater than %5",string2,string1);}}
+    else{printf("%s is greater than %s",string2,string1);}}
   }
   
 
