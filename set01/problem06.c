@@ -1,4 +1,4 @@
-+#include <stdio.h>
+#include <stdio.h>
 int import();
 void compare(int a, int b, int c, int *largest);
 void output(int a, int b, int c, int largest);
