@@ -1,7 +1,8 @@
 #include <stdio.h>
 int sum_func(int a,int b,int sum);
 
-int main(void) {
+int main(void)
+{
   int a,b,sum;
   printf("enter your first number\n");
   scanf("%d", &a);
