@@ -21,7 +21,7 @@ int input(){
 }
 
 void compare(int a,int b,int c,int *largest){
-    if(a>b)
+    if(a>b)//use && operator
     {
       if(a>c){*largest = a;}
       else{*largest = c;}

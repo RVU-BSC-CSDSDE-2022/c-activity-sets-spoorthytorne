@@ -20,7 +20,6 @@ int input(){
   return(x);  
 }
 
-
 int compare(int a, int b, int c)
 {
 	if (  a>=b && a>=c) 

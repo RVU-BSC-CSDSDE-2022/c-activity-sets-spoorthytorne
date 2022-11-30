@@ -21,8 +21,8 @@ void input_two_strings(char *string1, char *string2){
 
 int stringcompare(char *string1, char *string2){
   int a = strlen(string1);
-  int b = strlen(string2);
-  if(a == b){
+  int b = strlen(string2);//use your own strlen function
+  if(a == b){//use only one loop to check all the required condition
     int i;
     for(i = 0;i<a;i++){
       if(string1[i]==string2[i]){

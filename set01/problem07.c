@@ -18,9 +18,9 @@ int input_n(){
 }
 
 int sum_n_nos(int n){
-  n = (n*(n+1))/2;
+  n = (n*(n+1))/2;//use for loop insted of the function
   return (n);
 }
 void output(int n, int sum){
-  printf("the sum of %d natural number is %d",n,sum);
+  printf("the sum of %d natural number is %d",n,sum);// 1+2+3+...+n = sum
 }
