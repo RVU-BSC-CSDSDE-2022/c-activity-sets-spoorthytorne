@@ -18,10 +18,15 @@ double input(){
 }
 
 double square_root(double n){
-  double x;
-  x = sqrt(n);//use babyloniean method
-  return(x);
+   int x=n;
+   int y=1;
+  while (x > y) {
+        x = (x + y) / 2;
+        y = n / x;
+    }
+    return x;
 }
+
 
 void output(double n,double sqrroot){
   printf("square root of %2.2lf is %2.4lf",n,sqrroot);

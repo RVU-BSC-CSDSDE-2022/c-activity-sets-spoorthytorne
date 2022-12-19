@@ -78,7 +78,7 @@ void find_weight(Camel *c); //passing address variable
 void output(Camel c);
 ```
 
-***Input***
+***Input***...........................
 
 ```
 1
